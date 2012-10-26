@@ -14,3 +14,4 @@ window.Otterlogs =
   Functions: {}
   Models: {}
   Routers: {}
+  objects: {}

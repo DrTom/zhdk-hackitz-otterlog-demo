@@ -1,6 +1,9 @@
 %h1 HackITZ Otterlogs Demo
 
+  #content
+
 :coffeescript
   $ -> 
+    console.log "initializing router ..."
     window.router = new Otterlogs.Routers.Main()
     Backbone.history.start({pushState: true})
