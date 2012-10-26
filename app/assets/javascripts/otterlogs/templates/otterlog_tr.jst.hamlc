@@ -1,0 +1,7 @@
+%tr.otterlog{id: "#{@model.id}"}
+  %td= @model.get('name')
+  %td= @model.get('documented_at')
+  %td= @model.get('state')
+  %td= @model.get('place')
+  %td= @model.get('wetness')
+  %td= (@model.get('is_eating')==true ? "ja" : "nein")

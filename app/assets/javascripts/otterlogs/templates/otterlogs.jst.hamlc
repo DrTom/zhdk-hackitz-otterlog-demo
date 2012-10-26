@@ -1,4 +1,4 @@
-%table.otterlogs
+%table.table.otterlogs
   %tr
     %th Name
     %th Zeit
