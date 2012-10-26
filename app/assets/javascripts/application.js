@@ -10,10 +10,10 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require underscore
-//= require backbone  
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require backbone  
 //= require bootstrap
 //= require otterlogs
 //= require_tree .

@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'activerecord-jdbcpostgresql-adapter',  platform: :jruby
+gem 'coffee-filter'
 gem 'composite_primary_keys'
 gem 'foreigner'
 gem 'haml-rails'
