@@ -5,9 +5,11 @@
 #= require_self
 #= require_tree ./otterlogs/functions
 #= require_tree ./otterlogs/models
+#= require_tree ./otterlogs/collections
 #= require ./otterlogs/extend
 
 
 window.Otterlogs = 
+  Collections: {}
   Functions: {}
   Models: {}
