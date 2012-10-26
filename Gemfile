@@ -1,38 +1,42 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
+gem 'activerecord-jdbcpostgresql-adapter',  platform: :jruby
+gem 'composite_primary_keys'
+gem 'foreigner'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'jruby-openssl',  platform: :jruby
+gem 'pg', platform: :mri_19
 gem 'rails', '3.2.8'
+gem 'torquebox', '2.1.2', platform: :jruby
+gem 'torquebox-rake-support', '2.1.2', platform: :jruby
+gem 'uuidtools'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass' 
+  gem 'coffee-rails'
+  gem 'haml_coffee_assets'
+  gem 'sass-rails'
+  gem 'therubyrhino', platform: :jruby
+  gem 'uglifier'
 end
 
-gem 'jquery-rails'
+group :development, :test do
+  gem "guard-spork", platform: :mri_19
+  gem 'capybara'
+  gem 'cucumber-rails'
+  gem 'gherkin' 
+  gem 'database_cleaner'
+  gem 'debugger', platform: :mri_19
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'guard-jasmine'
+  gem 'guard-rspec'
+  gem 'jasminerice'
+  gem 'poltergeist'
+  gem 'pry'
+  gem 'quiet_assets'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'spork-rails'
+end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
