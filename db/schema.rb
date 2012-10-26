@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 1) do
     t.string   "state"
     t.string   "place"
     t.string   "wetness"
-    t.boolean  "is_eating"
+    t.string   "is_eating"
     t.datetime "documented_at"
     t.string   "id",            :limit => nil, :null => false
   end

@@ -5,7 +5,7 @@ class CreateOtterlogs < ActiveRecord::Migration
       t.string :state #, null: false
       t.string :place# , null: false
       t.string :wetness#, null: false
-      t.boolean :is_eating#, null: false
+      t.string :is_eating#, null: false
       t.timestamp :documented_at#, null: false
     end
 

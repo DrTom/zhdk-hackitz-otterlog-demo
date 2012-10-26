@@ -1,15 +1,16 @@
-.buttons
-  %button.btn.btn-success#add_new_otterlog Einen neuen Eintrag hinzufügen
+#logs
+  .buttons
+    %button.btn.btn-success#add_new_otterlog Einen neuen Eintrag hinzufügen
 
+  %table.table.otterlogs.datatable
+    %thead 
+      %tr
+        %th Name
+        %th Zeit
+        %th Zustand
+        %th Aufenthaltsort
+        %th Nassheit
+        %th Frisst gerade
+    %tbody
 
-%table.table.otterlogs.datatable
-  %thead 
-    %tr
-      %th Name
-      %th Zeit
-      %th Zustand
-      %th Aufenthaltsort
-      %th Nassheit
-      %th Frisst gerade
-
-    
+      

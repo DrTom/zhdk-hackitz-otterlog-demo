@@ -1,0 +1,16 @@
+#create_log
+
+  %form 
+
+    .buttons
+      %button.btn.btn-warning#cancel Zurück ohne speichern
+
+    %label Name
+      %input#name{type:'text'}
+
+    #fields
+
+    .buttons
+      %button.btn.btn-success#submit Speichern und Zurück 
+
+

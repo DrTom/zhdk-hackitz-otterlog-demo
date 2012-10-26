@@ -11,11 +11,16 @@ Otterlogs.Routers.Main = Backbone.Router.extend
   routes: 
     "": "root"
     "logs/": "index"
+    "logs/create": "create"
 
   root: ->
     @navigate("/logs/",{trigger: true})
 
   index: ->
     window.Otterlogs.objects.otterlogs_view.render()
+
+  create: -> 
+    window.new_log = log = new Otterlogs.Models.Otterlog()
+    (new Otterlogs.Views.CreateLog(model: log)).render()
 
 
