@@ -17,6 +17,7 @@ group :assets do
   gem 'bootstrap-sass' 
   gem 'coffee-rails'
   gem 'haml_coffee_assets'
+  gem 'jquery-datatables-rails'
   gem 'sass-rails'
   gem 'therubyrhino', platform: :jruby
   gem 'uglifier'

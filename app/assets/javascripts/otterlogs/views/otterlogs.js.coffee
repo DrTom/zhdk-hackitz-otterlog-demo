@@ -8,18 +8,28 @@ Otterlogs.Views.Otterlogs = Backbone.View.extend
     @collection = @options.collection
 
     @collection.on "add", (model)=>
-      @add_row(model)
+      @render()
 
   render: ->
     @setElement($("#content"))
     @$el.empty()
     @$el.append @template()
 
+    $('.datatable').dataTable
+       sDom: "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
+       sPaginationType: "bootstrap"
+ 
     @collection.models.forEach (model)=>
       @add_row(model)
-  
+
+ 
   add_row: (model)->
-    @$('table.otterlogs').append @row_template({model:model})
+    debugger
+    #@$('table.otterlogs').dataTable().fnAddData(model.attributes)
+    
+    #    @$('table.otterlogs').append @row_template({model:model})
+#    $('.datatable').dataTable()
+
 
 
 
