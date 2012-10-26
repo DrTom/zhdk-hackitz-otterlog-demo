@@ -1,4 +1,4 @@
 class Otterlog < ActiveRecord::Base
   set_primary_key :id
-  # attr_accessible :title, :body
+  attribute_names.map(&:to_sym).each{|att| attr_accessible att}
 end

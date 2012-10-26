@@ -1,0 +1,2 @@
+module OtterlogsHelper
+end
