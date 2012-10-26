@@ -3,10 +3,13 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 #
 #= require_self
-#= require_tree ./otterlogs/functions
-#= require_tree ./otterlogs/models
-#= require_tree ./otterlogs/collections
-#= require ./otterlogs/extend
+#= require_tree ./functions
+#= require_tree ./models
+#= require_tree ./collections
+#= require_tree ./templates
+#= require_tree ./views
+
+#= require ./extend
 
 
 window.Otterlogs = 
@@ -14,4 +17,5 @@ window.Otterlogs =
   Functions: {}
   Models: {}
   Routers: {}
+  Views: {}
   objects: {}

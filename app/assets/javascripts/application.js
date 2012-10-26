@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore
+//= require hamlcoffee
 //= require backbone  
 //= require bootstrap
-//= require otterlogs
+//= require otterlogs/load
 //= require_tree .

@@ -1,0 +1,10 @@
+%table.otterlogs
+  %tr
+    %th Name
+    %th Zeit
+    %th Zustand
+    %th Aufenthaltsort
+    %th Nassheit
+    %th Frisst gerade
+
+    
