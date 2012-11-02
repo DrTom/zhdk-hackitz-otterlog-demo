@@ -1,6 +1,6 @@
 #create_log
 
-  %form 
+  %form
 
     .buttons
       %button.btn.btn-warning#cancel Zurück ohne speichern

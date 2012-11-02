@@ -1,4 +1,5 @@
-%label!= @field.label
+.control-group
+  %label!= @field.label
   %select
     - for val in @field.values
       %option{key: @field.key, value: val}= val
